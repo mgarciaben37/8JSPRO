@@ -1,4 +1,4 @@
-# 8JSBackend
+# 8JSPRO
 
 ES profesional en la Web (Front - Back)
 Configurar entorno (linter, testing)

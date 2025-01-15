@@ -80,5 +80,121 @@ end_of_line = crlf
 charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = true
-
 ```
+
+# LINTER EXTENSIÓN
+Linter es una herramienta que de forma estatica nos da pistas de malas practicas, ejemplo: poner let en vez de const. Para eso hay que ponerle reglas.
+
+WEB LINTER--> https://eslint.org/
+
+npm init @eslint/config@latest
+
+
+INSTALAR ESLint
+1. primeros necesitamos la extension
+2. npm init @eslint/config@latest
+3. (y)? SI
+4.  How would you like to use ESLint? ... 
+  To check syntax only
+> To check syntax and find problems -->ESTE
+5. 
+√ How would you like to use ESLint? · problems
+? What type of modules does your project use? ... 
+> JavaScript modules (import/export)
+  CommonJS (require/exports)
+  None of these--> ESTE
+
+ME QUEDO A MITAD DE CAMINO DE COPIAR, los de abajo son los parámetros necesarios para la instalación:
+
+√ How would you like to use ESLint? · problems
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · typescript
+√ Where does your code run? · browser, node
+The config that you've selected requires the following dependencies:
+
+eslint, globals, @eslint/js, typescript-eslint
+√ Would you like to install them now? · No / Yes
+√ Which package manager do you want to use? · npm
+
+se nos crea un archivo eslint.config.js, con los parámetros.
+
+Si queremos configurar algo del linter en el archivo eslint.config.js, podemos ponerlo:
+
+Ejemplo:
+
+En este codigo de abajo que hemos añadido a linter nos pone un warning pero nos "deja de tocar las narices". podemos dejarlo Off /Warn /Error
+
+```ts
+ {
+    rules: {
+        'prefer-const': 'warn',
+    },
+  },
+```  
+
+# TYPESCRIPT
+
+typescript compila. Si hay un error de código no lo compiles.
+
+
+# TESTING 
+
+Test automaticos que funcionan.
+
+## Testing Unitario
+
+https://mochajs.org/
+
+https://jasmine.github.io/
+
+https://jestjs.io/
+
+https://vitest.dev/--> INSTALAMOS ESTE
+
+### INSTALAMOS VITEST
+
+1. npm install -D vitest
+2. Para ejecutar nuestros text: npm run test
+
+Queremos ejecutar el fichero tsc del package.json --> npm run tsc -- services.js
+
+INSTALAR EN CASA
+
+[https://github.cohttps://github.com/coreybutler/nvm-windows/releasesm/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows?tab=readme-ov-file)
+
+Dowload 
+
+nvm-setup.exe
+
+Instalacion generica
+
+INSTALAR EN CASA LA VERSION DE 23.6.0 DE NODE
+
+
+### SEGUIMOS CON LOS TEST
+Un test lo que hace es decir OYE cuando yo ejecute esto, entonces espero expect
+
+npm -D @types/jest
+
+```ts
+import { add } from "./services";
+
+console.log(add(4,5));
+console.log(add(1, -2));
+console.log(add(1.5, 3.4));
+
+test('Add function with 1 and 1 should return 1', () =>{
+    expect(add(0, 1)).toBe(1)
+});
+
+test("Patata", () => {
+    expect(add(1, -2)).toBe(-1);
+});
+
+test("Patata", () => {
+    expect(add(1.5, 3.4)).toBe(4.9);
+});
+```
+
+npm run test--> para ejecutar los test
