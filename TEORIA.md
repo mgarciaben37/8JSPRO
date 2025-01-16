@@ -2,9 +2,9 @@
 
 https://2024.stateofjs.com/en-US/libraries/build_tools/
 
--   Build--> En resumen, un build es un proceso clave en el desarrollo de software que permite a los desarrolladores crear una versión ejecutable de tu software. Este proceso es esencial para garantizar la calidad y la funcionalidad del software antes de su lanzamiento.
+- Build--> En resumen, un build es un proceso clave en el desarrollo de software que permite a los desarrolladores crear una versión ejecutable de tu software. Este proceso es esencial para garantizar la calidad y la funcionalidad del software antes de su lanzamiento.
 
--   Vite--> Freamwork. Pagina Web: https://vite.dev/. Carpeta This que solo va a tener HTML puro compactado, CSS y Javascript. Se llama compilación. A la hora de elegir un freamwork, miraremos "LA VELOCIDAD". Vite es una herramienta de creación de frontend increíblemente rápida que impulsa la próxima generación de aplicaciones web. pronunciado como /vit/.
+- Vite--> Freamwork. Pagina Web: https://vite.dev/. Carpeta This que solo va a tener HTML puro compactado, CSS y Javascript. Se llama compilación. A la hora de elegir un freamwork, miraremos "LA VELOCIDAD". Vite es una herramienta de creación de frontend increíblemente rápida que impulsa la próxima generación de aplicaciones web. pronunciado como /vit/.
 
 -   Para empezar a trabajar con Vite:
 
