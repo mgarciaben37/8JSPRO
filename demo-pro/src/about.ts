@@ -1,1 +1,3 @@
-console.log("Loaded Main");
+import './style.css';
+
+console.log('Loaded Main');

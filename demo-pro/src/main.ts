@@ -1,4 +1,5 @@
 import { add } from "./services";
+import "./style.css";
 
 console.log("Loaded main");
 
