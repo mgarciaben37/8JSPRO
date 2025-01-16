@@ -223,3 +223,11 @@ Netlify es una plataforma de desarrollo web que facilita el despliegue de sitios
 https://www.netlify.com/
 
 !!! IMPORTANTE¡¡¡ Vercel y Netlify nos permite tener un servidor Web con paginas nuestras.
+
+**Si queremos convertir un proyecto existente en Vite**
+
+llevamos el package.json + tsconfig + vite.config + copiar las carpetas
+
+## TypeScript Backend
+
+IR A LA DOCUMENTACION DEL PROFESOR Y COPÎAR DEMO-NODE
