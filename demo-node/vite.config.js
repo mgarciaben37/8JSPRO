@@ -1,9 +1,19 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /// <reference types="vitest" />
-const config_1 = require("vitest/config");
-exports.default = (0, config_1.defineConfig)({
+import { defineConfig } from 'vitest/config';
+// import path, { resolve } from 'path';
+// import tsconfigPaths from 'vite-tsconfig-paths';
+
+export default defineConfig({
+    // resolve: {
+    //     alias: {
+    //         '@': path.resolve(__dirname, './src'),
+    //     },
+    // },
+
+    //
+    // plugins: [tsconfigPaths()],
     test: {
+        include: ['**/*.test.ts'],
         globals: true,
     },
 });
