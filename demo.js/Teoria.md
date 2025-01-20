@@ -1,4 +1,6 @@
-# Tipos de Javascript
+# DIA 17/01/2025
+
+## Tipos de Javascript
 
 * string
 * number
@@ -10,7 +12,7 @@
 
 Mi código UTILIZAAAA estos datos y construye entidades referenciadas que son los OBJETOS, solo estos pueden mutar. Hay un tipo de objeto MUY ESPECIAL que es la FUNCIÓN.
 
-# Variables
+## Variables
 
 IMPORTANTE USAR Y PONER 'USE STRICT' en el documento de JS o TS que vayamos a usar.
 
@@ -28,7 +30,7 @@ const title = `El tesoro de
 ${user}`
 ```
 
-# Numbers
+## Numbers
 
 * Dentro de la escritura de los números, la barra baja ( _ )es ignorada. Ej:  
 ```js
@@ -51,3 +53,104 @@ Ej:
 ```js
 const rare = 0/0
 ```
+
+# DIA 20/01/2025
+
+MUTACIÓN: Cuando a la constante le ponemos un atributo Ej. obj.name
+
+Objetc = {New Objet} // Con corchetes es un nuevo objeto
+objetc = objetc2 // Mismo objeto
+
+Objetos anidados. REPASAR
+
+**FUNCIONES CONSTRUCTORAS** (LO VEREMOS): Cuando nos encontramos uno objeto new + Letra mayúsculas
+
+Ej:
+```js
+const obj1 = new Object();
+```
+
+SE USA PASCAL CASE (primera con mayúscula)
+
+Objeto de tipo fecha: new Date
+
+**WRAPPER OBJECT DE LOS PRIMITIVOS**
+
+Ej:
+```js;
+foo.ToLowerCase();
+```
+Esto no se podría hacer, pero la coercion lo permite, con lo que la variable hacemos que se convierta a minúsculas.
+
+## Expresiones y Sentencias
+
+**Operadores** --> Valores
+
+```js
+22/11
+```
+IMPORTANT!! Las expresiones se construyen con operadores
+
+* Primario--> una 1 operando
+  ```js
+  console.log(!true);
+  ```
+* Binario--> usa 2
+  ```js
+  console.log(2 + 2);
+  ```
+* Ternario--> usa 3
+  ```js
+  console.log(true ? 'True' : 'False');
+  ```
+
+**Sentencias** --> Ordenes
+
+```js
+const r = 33/7;
+console.log(r.tofixed(2));
+```
+
+
+**Operador throw**
+Técnicamente, podemos usar cualquier cosa como un objeto error. Eso puede ser incluso un primitivo, como un número o una cadena, pero es mejor usar objetos, preferiblemente con propiedades name y message (para mantenerse algo compatible con los errores incorporados).
+
+Para lanzar un error, para evitar que nuestro código falle.
+
+```js
+Ej: throw new Error ('mensaje de Error');
+```
+
+**Try error**
+La declaración try... catch señala un bloque de instrucciones a intentar ( try ), y especifica una respuesta si se produce una excepción ( catch )
+
+```js
+try{
+    const r = divide(3, 0);
+    console.log(r*3);
+} catch (error){
+    console.error(error);
+}
+
+console.log('Fin del programa');
+```
+
+**Objects**
+```js
+const user = {
+    name:'pepe',
+    age: 22,
+    job: 'developer'
+}
+
+console.log(Object.keys(user));//Clave --> Devuelve [ 'name', 'age', 'job' ]
+console.log(Object.values(user)); // Valor --> Devuelve [ 'pepe', 22, 'developer' ]
+```
+
+```js
+console.log(typeof []); // devuelve Object NO array
+console.log(typeof new Error ()); // devuelve Object
+console.log(typeof new Date()); // devuelve Object
+```
+
+**Arrays**  
